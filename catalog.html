@@ -202,12 +202,10 @@
             <fieldset class="catalog-filter-group-cost">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <div class="input-cost">
-                <input
-                  class="cost"
-                  type="number"
-                  placeholder="                              от"
-                />
-                <input class="cost-1" type="text" placeholder="до" />
+                <input class="cost" type="number" value="0" />
+                <span class="cost-text">от</span>
+                <input class="cost-1" type="number" value="9000" />
+                <span class="cost-text1">до</span>
               </div>
               <div class="range">
                 <div class="range-scale">
@@ -519,7 +517,6 @@
             type="email"
             name="newsletter-email"
             id="newsletter-email"
-            required
           />
 
           <button class="button newsletter-button" type="submit">

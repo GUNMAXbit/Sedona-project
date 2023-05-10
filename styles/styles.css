@@ -1024,27 +1024,72 @@ body {
   border: none;
 }
 .input-cost {
+  position: relative;
   width: 287px;
   margin-bottom: 32px;
 }
+.cost-text {
+  position: absolute;
+  color: white;
+  opacity: 0.3;
+  left: 112px;
+  top: 12px;
+}
+.cost-text1 {
+  position: absolute;
+  color: white;
+  opacity: 0.3;
+  left: 250px;
+  top: 12px;
+}
 .cost {
-  width: 136px;
-  height: 46px;
+  display: block;
+  box-sizing: border-box;
+  width: 143px;
+  height: 48px;
+  padding: 0;
+  padding-left: 19px;
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 4px 0 0 4px;
+  border-right: none;
+  color: white;
+}
+.cost:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+.cost:focus {
+  outline: none;
+  box-shadow: inset 0px 0px 0px 3px #81b3d2, 1px 0px 0px 3px #81b3d2;
+}
+.cost:active {
+  outline: none;
+  box-shadow: none;
+  background-color: #756257;
 }
 .cost-1 {
-  width: 136px;
-  height: 46px;
+  display: block;
+  box-sizing: border-box;
+  width: 143px;
+  height: 48px;
+  padding: 0;
+  padding-left: 19px;
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 0px 4px 4px 0;
+  color: white;
 }
-.cost::after {
-  top: 0;
-  bottom: 0;
-  content: "от";
+.cost-1:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+.cost-1:focus {
+  outline: none;
+  box-shadow: inset 0px 0px 0px 3px #81b3d2, 1px 0px 0px 3px #81b3d2;
+}
+.cost-1:active {
+  outline: none;
+  box-shadow: none;
+  background-color: #756257;
 }
 .range-scale {
   position: relative;
