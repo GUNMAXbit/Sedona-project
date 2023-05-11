@@ -407,18 +407,36 @@
                 placeholder="1 сентября 2021"
               />
             </p>
-            <div class="field-group appointment-form-date">
+            <div class="people-number-container">
               <label class="form-label">Взрослые:</label>
-              <div class="adult-number">
+              <div class="number-container">
                 <button
                   class="number-minus"
                   type="button"
                   onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"
-                >
-                  -
-                </button>
+                ></button>
                 <input
-                  class="adult-number-input"
+                  class="number-input"
+                  type="number"
+                  min="0"
+                  value="2"
+                  readonly
+                />
+                <button
+                  class="number-plus"
+                  type="button"
+                  onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"
+                ></button>
+              </div>
+              <label class="form-label child-label">Дети:</label>
+              <div class="number-container">
+                <button
+                  class="number-minus"
+                  type="button"
+                  onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"
+                ></button>
+                <input
+                  class="number-input"
                   type="number"
                   min="0"
                   value="1"
@@ -428,28 +446,12 @@
                   class="number-plus"
                   type="button"
                   onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"
-                >
-                  +
-                </button>
+                ></button>
               </div>
             </div>
-            <div class="child-number">
-              <button
-                class="number-minus"
-                type="button"
-                onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"
-              >
-                -
-              </button>
-              <input type="number" min="0" value="1" readonly />
-              <button
-                class="number-plus"
-                type="button"
-                onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"
-              >
-                +
-              </button>
-            </div>
+            <button class="button button-modal-search" type="submit">
+              Найти!
+            </button>
           </form>
         </section>
       </div>
