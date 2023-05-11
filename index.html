@@ -376,22 +376,81 @@
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-          <p class="field-group appointment-form-date">
+          <form
+            class="appointment-form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <p class="field-group appointment-form-date">
+              <label class="form-label" for="appointment-date">
+                Дата заезда:</label
+              >
 
-            <label class="form-label" for="appointment-date">
-              Дата заезда</label>
+              <input
+                class="field-data"
+                type="text"
+                id="appointment-date"
+                name="appointment-date"
+                placeholder="27 апреля 2020"
+              />
+            </p>
+            <p class="field-group appointment-form-date">
+              <label class="form-label" for="appointment-date">
+                Дата выезда:</label
+              >
 
-
-          <input class="field" type="text" id="appointment-date" name="appointment-date" placeholder="01.01.2020">
-        </p>
-        <p class="field-group appointment-form-date">
-
-          <label class="form-label" for="appointment-date">
-            Дата выезда</label>
-
-
-        <input class="field" type="text" id="appointment-date" name="appointment-date" placeholder="01.01.2020">
-      </p>
+              <input
+                class="field-data"
+                type="text"
+                id="appointment-date"
+                name="appointment-date"
+                placeholder="1 сентября 2021"
+              />
+            </p>
+            <div class="field-group appointment-form-date">
+              <label class="form-label">Взрослые:</label>
+              <div class="adult-number">
+                <button
+                  class="number-minus"
+                  type="button"
+                  onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"
+                >
+                  -
+                </button>
+                <input
+                  class="adult-number-input"
+                  type="number"
+                  min="0"
+                  value="1"
+                  readonly
+                />
+                <button
+                  class="number-plus"
+                  type="button"
+                  onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+            <div class="child-number">
+              <button
+                class="number-minus"
+                type="button"
+                onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"
+              >
+                -
+              </button>
+              <input type="number" min="0" value="1" readonly />
+              <button
+                class="number-plus"
+                type="button"
+                onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"
+              >
+                +
+              </button>
+            </div>
+          </form>
         </section>
       </div>
     </div>
