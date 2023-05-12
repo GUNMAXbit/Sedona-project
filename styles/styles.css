@@ -453,8 +453,7 @@ body {
   margin: 0 auto;
 }
 .main-text {
-  margin: 0;
-  margin-bottom: 31px;
+  margin: 0 0 31px 0;
   max-width: 720px;
   font-size: 30px;
   line-height: 36px;
@@ -463,8 +462,7 @@ body {
 }
 
 .main-description-text {
-  margin: 0;
-  margin-bottom: 80px;
+  margin: 0 0 80px 0;
   max-width: 720px;
   font-size: 22px;
   line-height: 36px;
@@ -488,8 +486,7 @@ body {
 }
 
 .advantages-title {
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
   max-width: 150px;
   font-size: 24px;
   line-height: 28px;
@@ -599,8 +596,7 @@ body {
 }
 
 .search-hostel-title {
-  margin: 0;
-  margin-bottom: 29px;
+  margin: 0 0 29px 0;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -609,9 +605,7 @@ body {
 }
 .search-hostel-text {
   max-width: 720px;
-  margin: 0;
-  margin-bottom: 56px;
-
+  margin: 0 0 56px 0;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -645,8 +639,7 @@ body {
   position: relative;
 }
 .page-footer-title {
-  margin: 0 auto;
-  margin-bottom: 29px;
+  margin: 0 0 29px 0;
   font-size: 30px;
   height: 36px;
 
@@ -793,8 +786,7 @@ body {
 .footer-academy {
   display: flex;
   align-items: center;
-  margin: 0;
-  margin-right: 49px;
+  margin: 0 49px 0 0;
 }
 
 .htmlacademy-link {
@@ -834,14 +826,13 @@ body {
   background-color: #ffffff;
 }
 .inner-header {
-  margin: 0 auto;
+  margin: -5px 0 0 0;
   color: #ffffff;
   flex-direction: column;
   display: flex;
   width: 1200px;
   height: 408px;
   background-image: url("../img/catalog-background 1.png");
-  margin-top: -5px;
 }
 .catalog-products-picture {
   position: relative;
@@ -854,10 +845,9 @@ body {
   line-height: 78px;
 }
 .breadcrumbs {
-  margin: 0;
+  margin: 0 0 45px 0;
   display: flex;
   padding: 0 66px;
-  margin-bottom: 45px;
 }
 .breadcrumbs-item {
   position: relative;
@@ -1431,6 +1421,9 @@ body {
   height: 100%;
   background: rgba(242, 242, 242, 0.8);
 }
+.modal-container-close {
+  display: none;
+}
 .modal {
   position: relative;
   margin: auto;
@@ -1504,11 +1497,17 @@ body {
   border-radius: 4px;
   width: 420px;
   box-sizing: border-box;
-  padding: 0 0 0 19px;
+  padding: 0 19px 0 19px;
   border: none;
-  background-image: url(../img/calendar.svg);
+  background-image: url(../img/date1.svg);
   background-repeat: no-repeat;
-  background-position: right 19px center;
+  background-position: center;
+}
+.field-data::-webkit-calendar-picker-indicator {
+  color: transparent;
+  background-image: url(../img/date1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .form-label {
   width: 155px;
@@ -1527,17 +1526,12 @@ body {
 }
 .field-data:hover {
   background-color: #e6e6e6;
-  background-image: url(../img/calendar.svg);
-  background-repeat: no-repeat;
-  background-position: right 19px center;
 }
 .field-data:focus {
   background: #e6e6e6;
   outline: 3px solid #83b3d3;
   border: none;
-  background-image: url(../img/calendar.svg);
-  background-repeat: no-repeat;
-  background-position: right 19px center;
+  background-image: none;
 }
 
 .number-container {
