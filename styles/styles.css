@@ -1040,6 +1040,20 @@ body {
   width: 287px;
   margin-bottom: 28px;
 }
+.cost[type="number"] {
+  font-family: "PT Sans";
+  font-size: 18px;
+}
+.cost[type="number"] {
+  -moz-appearance: textfield;
+}
+.cost-1[type="number"] {
+  -moz-appearance: textfield;
+}
+.cost-1[type="number"] {
+  font-size: 18px;
+  font-family: "PT Sans";
+}
 .cost-text {
   position: absolute;
   color: white;
@@ -1185,6 +1199,7 @@ body {
   background-image: url(../img/Vector-arrow.svg);
   background-repeat: no-repeat;
   background-position: right 16px center;
+  -moz-appearance: none;
 }
 .select-control:hover {
   border: 2px solid #83b3d3;
