@@ -4,12 +4,10 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
     <style>
-      ul {
-        list-style-type: none;
-      }
+      ul {list-style-type: none;}
     </style>
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico" />
   </head>
 
   <body>
@@ -19,7 +17,7 @@
           <a class="navigation-logo" href="index.html">
             <img
               class="logo"
-              src="./img/logo.png"
+              src="./img/logo.svg"
               width="139"
               height="70"
               alt="Логотип Седоны."
@@ -99,10 +97,10 @@
             />
             <img
               class="divider"
-              src="./img/divider.png"
+              src="./img/Underground-line.png"
               width="1200"
               height="57"
-              alt="Дивайдер."
+              alt="Нижний фон главной страницы."
             />
           </div>
           <div class="container-main-text">
@@ -123,13 +121,13 @@
                   </h3>
                   <span class="advantages-number number--white">-№1-</span>
                   <p class="advantages-description description--white">
-                    Седона — не атракцион<br />
+                    Седона — не аттракцион<br />
                     для туристов, там течёт своя жизнь
                   </p>
                 </li>
                 <li class="advantages-item advantages-item-picture">
                   <img
-                    src="./img/photo-1.jpg"
+                    src="./img/Photo-Sedona.jpg"
                     width="800"
                     height="384"
                     alt="Фото городка Седоны."
@@ -142,7 +140,7 @@
                 <li class="advantages-item advantages-item-logo">
                   <img
                     class="section_logo"
-                    src="./img/icon-1.svg"
+                    src="./img/house-icon.svg"
                     width="74"
                     height="72"
                     alt="Домик."
@@ -159,7 +157,7 @@
                 >
                   <img
                     class="section_logo"
-                    src="./img/icon-2.svg"
+                    src="./img/Food-icon.svg"
                     width="74"
                     height="70"
                     alt="Бургер."
@@ -175,7 +173,7 @@
                 <li class="advantages-item advantages-item-logo">
                   <img
                     class="section_logo logo-gifts"
-                    src="./img/icon-3.svg"
+                    src="./img/Gift-icon.svg"
                     width="64"
                     height="76"
                     alt="Картинка подарочной коробочки."
@@ -193,7 +191,7 @@
               <ul class="advantages-list">
                 <li class="advantages-item advantages-item-picture">
                   <img
-                    src="./img/photo-2.jpg"
+                    src="./img/Nature-Sedona.jpg"
                     width="800"
                     height="384"
                     alt="Пейзаж Седоны."
@@ -318,7 +316,7 @@
                     d="M7 0C4.8 0 3 1.8 3 4v2H0v4h3v8h4v-8h3V6H7V4h3V0H7Z"
                   />
                 </svg>
-                <span class="visually-hidden">Фэйсбук</span>
+                <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
             <li class="footer-social-item">
@@ -377,9 +375,9 @@
           </div>
         </div>
       </footer>
-      <div class="modal-container modal-container-close">
+      <div class="modal-container  ">
         <div class="modal modal-search">
-          <button class="modal-close-button">
+          <button class="modal-close-button" type="button">
             <span class="visually-hidden">Закрыть</span>
           </button>
           <section class="modal-content">
@@ -427,6 +425,7 @@
                     type="button"
                     onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"
                   ></button>
+                  <label>
                   <input
                     class="number-input"
                     type="number"
@@ -435,6 +434,7 @@
                     value="2"
                     readonly
                   />
+                </label>
                   <button
                     class="number-plus"
                     type="button"
@@ -451,7 +451,7 @@
                     >
                       i
                     </button>
-                    <span class="tooltip-text" role="tooltip" id="tooltip-label"
+                    <p class="tooltip-text" role="tooltip" id="tooltip-label"
                       >Укажите количество детей, которые будут с вами, возраст
                       которых от 6 до 18 лет. Дети до 6 лет размещаются
                       бесплатно.
@@ -465,7 +465,7 @@
                       >
                         <path fill="#333" d="M9.5 0 19 9H0l9.5-9Z" />
                       </svg>
-                    </span>
+                    </p>
                   </span>
                 </span>
                 <div class="number-container">
@@ -474,6 +474,7 @@
                     type="button"
                     onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"
                   ></button>
+                  <label>
                   <input
                     class="number-input"
                     type="number"
@@ -481,7 +482,7 @@
                     min="0"
                     value="1"
                     readonly
-                  />
+                  /></label>
                   <button
                     class="number-plus"
                     type="button"
