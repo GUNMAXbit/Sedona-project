@@ -23,16 +23,14 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 24px;
   color: #242424;
   background-color: #f2f2f2;
 }
-ul {
-  list-style-type: none;
-}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -322,7 +320,7 @@ ul {
 .parent {
   margin-bottom: 63px;
   margin-top: -5px;
-  background-image: url("../img/index-background.jpg");
+  background-image: url("../img/Index-background.jpg");
   width: 1200px;
   min-height: 485px;
   display: flex;
@@ -351,6 +349,7 @@ ul {
   margin: 0;
   padding: 0;
   width: 650px;
+  list-style-type: none;
 }
 .navigation-user {
   width: 350px;
@@ -489,6 +488,7 @@ ul {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .advantages-title {
@@ -626,7 +626,7 @@ ul {
   align-items: center;
   width: 1200px;
   min-height: 316px;
-  background-image: url("../img/background-footer.jpg");
+  background-image: url("../img/Background-footer.jpg");
   background-repeat: no-repeat;
 }
 .newsletter-catalog {
@@ -834,7 +834,7 @@ ul {
   display: flex;
   width: 1200px;
   min-height: 408px;
-  background-image: url("../img/catalog-background 1.png");
+  background-image: url("../img/Catalog-background 1.png");
 }
 .catalog-products-picture {
   position: relative;
@@ -850,6 +850,7 @@ ul {
   display: flex;
   padding: 0 66px;
   flex-wrap: wrap;
+  list-style-type: none;
 }
 .breadcrumbs-item {
   position: relative;
@@ -934,6 +935,7 @@ ul {
 .catalog-filter-list {
   padding: 0;
   margin: 0;
+  list-style-type: none;
 }
 .catalog-filter-title {
   font-weight: 700;
@@ -1198,7 +1200,7 @@ ul {
   border-radius: 4px;
   appearance: none;
   background-color: #ffffff;
-  background-image: url(../img/arrow.svg);
+  background-image: url(../img/Arrow.svg);
   background-repeat: no-repeat;
   background-position: right 19px center;
   -moz-appearance: none;
@@ -1260,6 +1262,7 @@ ul {
   grid-template-columns: repeat(3, 340px);
   gap: 50px 18px;
   padding: 0;
+  list-style-type: none;
   margin: 0;
 }
 
@@ -1395,6 +1398,7 @@ ul {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
+  list-style-type: none;
 }
 .pagination-item:not(:last-child) {
   margin-right: 8px;
@@ -1523,7 +1527,7 @@ ul {
 }
 .field-data::-webkit-calendar-picker-indicator {
   color: transparent;
-  background-image: url(../img/calendar.svg);
+  background-image: url(../img/Calendar.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
