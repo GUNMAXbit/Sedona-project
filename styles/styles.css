@@ -365,18 +365,9 @@ body {
   text-align: center;
   text-decoration: none;
 }
-/* .navigation-link-current {
+.navigation-link-current {
   text-decoration: underline 2px solid #756257;
   text-underline-offset: 24px;
-} */
-.navigation-link-current::before {
-  position: absolute;
-  right: 20px;
-  bottom: 0;
-  left: 20px;
-  height: 4px;
-  background-color: #756257;
-  content: "";
 }
 
 .navigation-link:hover {
@@ -1716,7 +1707,6 @@ body {
   line-height: 20px;
   font-weight: normal;
   padding: 15px 18px 18px 22px;
-  display: flex;
   align-items: center;
   width: 216px;
   height: 110px;
@@ -1729,8 +1719,4 @@ body {
 .tooltip-toggle:hover + .tooltip-text,
 .tooltip-toggle:focus + .tooltip-text {
   display: flex;
-}
-.field-data:invalid {
-  background: #ffffff;
-  border: 2px solid #ff5757;
 }
